@@ -1,5 +1,5 @@
 
-CC = g++
+CC = time clang++
 CCFLAGS = -g -Wall -Wextra -Wpedantic
 
 objects = main.o binary.o tables.o
