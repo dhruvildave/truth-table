@@ -30,14 +30,14 @@ void binary::num_check(int n, int min, int max)
 
     try
     {
-        switch (static_cast<int>(x))
+        switch (x)
         {
-        case -1:
+        case Num_Check::underflow:
             std::cout << "\nValue less than " << min << '\n';
             throw std::underflow_error("Underflow");
             break;
 
-        case 1:
+        case Num_Check::overflow:
             std::cout << "\nValue more than " << max << '\n';
             throw std::overflow_error("Overflow");
             break;
