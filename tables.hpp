@@ -7,12 +7,12 @@
 namespace table
 {
 
-void AND(uint BITS);  // and
-void IOR(uint BITS);  // inclusive or
-void XOR(uint BITS);  // exclusive or
-void NOR(uint BITS);  // not or
-void NAND(uint BITS); // not and
-void NXOR(uint BITS); // not xor
+void AND(unsigned int BITS);  // and
+void IOR(unsigned int BITS);  // inclusive or
+void XOR(unsigned int BITS);  // exclusive or
+void NOR(unsigned int BITS);  // not or
+void NAND(unsigned int BITS); // not and
+void NXOR(unsigned int BITS); // not xor
 void NOT(void);       // not
 
 } // namespace table

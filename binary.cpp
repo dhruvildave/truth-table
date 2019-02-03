@@ -1,19 +1,19 @@
 
 #include "binary.hpp"
 
-uint binary::bit_init(void)
+unsigned int binary::bit_init(void)
 {
-    uint x{};
+    unsigned int x{};
     std::cin >> x;
     return x;
 }
 
-double binary::bits_min(const uint n)
+double binary::bits_min(const unsigned int n)
 {
     return -pow(2, n - 1);
 }
 
-double binary::bits_max(const uint n)
+double binary::bits_max(const unsigned int n)
 {
     return pow(2, n - 1) - 1;
 }
@@ -53,7 +53,7 @@ void binary::num_check(int n, int min, int max)
     }
 }
 
-std::vector<uint> binary::dec_bin(int n, uint b)
+std::vector<unsigned int> binary::dec_bin(int n, unsigned int b)
 {
     bool neg{};
     if (n < 0)
@@ -61,9 +61,9 @@ std::vector<uint> binary::dec_bin(int n, uint b)
         neg = true;
         n *= -1;
     }
-    std::vector<uint> v;
+    std::vector<unsigned int> v;
 
-    for (uint i{}; i < b; ++i)
+    for (unsigned int i{}; i < b; ++i)
     {
         v.push_back(n % 2);
         n >>= 1;
@@ -76,10 +76,10 @@ std::vector<uint> binary::dec_bin(int n, uint b)
     return v;
 }
 
-std::vector<uint> binary::new_number_in(void)
+std::vector<unsigned int> binary::new_number_in(void)
 {
     std::cout << "Set the number of bits: ";
-    const uint BITS{binary::bit_init()};
+    const unsigned int BITS{binary::bit_init()};
     const double BITS_MIN{binary::bits_min(BITS)};
     const double BITS_MAX{binary::bits_max(BITS)};
 
@@ -91,7 +91,7 @@ std::vector<uint> binary::new_number_in(void)
     return {binary::dec_bin(n, BITS)};
 }
 
-std::vector<uint> binary::new_number_in(uint BITS)
+std::vector<unsigned int> binary::new_number_in(unsigned int BITS)
 {
     const double BITS_MIN{binary::bits_min(BITS)};
     const double BITS_MAX{binary::bits_max(BITS)};
@@ -104,10 +104,10 @@ std::vector<uint> binary::new_number_in(uint BITS)
     return {binary::dec_bin(n, BITS)};
 }
 
-std::vector<uint> binary::new_number(int n)
+std::vector<unsigned int> binary::new_number(int n)
 {
     std::cout << "Set the number of bits: ";
-    const uint BITS{binary::bit_init()};
+    const unsigned int BITS{binary::bit_init()};
     const double BITS_MIN{binary::bits_min(BITS)};
     const double BITS_MAX{binary::bits_max(BITS)};
 
@@ -116,7 +116,7 @@ std::vector<uint> binary::new_number(int n)
     return {binary::dec_bin(n, BITS)};
 }
 
-std::vector<uint> binary::new_number(uint BITS, int n)
+std::vector<unsigned int> binary::new_number(unsigned int BITS, int n)
 {
     const double BITS_MIN{binary::bits_min(BITS)};
     const double BITS_MAX{binary::bits_max(BITS)};
@@ -126,7 +126,7 @@ std::vector<uint> binary::new_number(uint BITS, int n)
     return {binary::dec_bin(n, BITS)};
 }
 
-size_t binary::no_values(uint BITS)
+size_t binary::no_values(unsigned int BITS)
 {
     return pow(2, BITS);
 }

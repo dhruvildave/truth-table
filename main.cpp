@@ -6,7 +6,7 @@ int main(void)
     std::cout << "::Truth Table::" << '\n';
 
     std::cout << "Enter the number of bits: ";
-    uint b{binary::bit_init()};
+    unsigned int b{binary::bit_init()};
 
     table::AND(b);
     std::cout << '\n';

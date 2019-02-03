@@ -7,11 +7,11 @@
 namespace binary
 {
 
-uint bit_init(void); // initialize number of bits
-double bits_min(const uint BITS); // calculate the min value
-double bits_max(const uint BITS); // calculate the max value
+unsigned int bit_init(void); // initialize number of bits
+double bits_min(const unsigned int BITS); // calculate the min value
+double bits_max(const unsigned int BITS); // calculate the max value
 
-size_t no_values(uint BITS); // calculate number of values
+size_t no_values(unsigned int BITS); // calculate number of values
 
 enum class Num_Check
 {
@@ -22,11 +22,11 @@ enum class Num_Check
 
 void num_check(int n, int min, int max);
 
-std::vector<uint> dec_bin(int n, uint BITS);
-std::vector<uint> new_number(int n);
-std::vector<uint> new_number_in(void);
-std::vector<uint> new_number(uint BITS, int n);
-std::vector<uint> new_number_in(uint BITS);
+std::vector<unsigned int> dec_bin(int n, unsigned int BITS);
+std::vector<unsigned int> new_number(int n);
+std::vector<unsigned int> new_number_in(void);
+std::vector<unsigned int> new_number(unsigned int BITS, int n);
+std::vector<unsigned int> new_number_in(unsigned int BITS);
 
 } // namespace binary
 
