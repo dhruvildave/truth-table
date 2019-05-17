@@ -2,10 +2,10 @@
 #if !defined(LOGIC_HPP)
 #define LOGIC_HPP
 
-#include <iostream>
-#include <vector>
+#include <algorithm>
 #include <cmath>
 #include <exception>
-#include <algorithm>
+#include <iostream>
+#include <vector>
 
 #endif // LOGIC_HPP

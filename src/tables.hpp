@@ -4,8 +4,7 @@
 
 #include "binary.hpp"
 
-namespace table
-{
+namespace table {
 
 void AND(unsigned int BITS);  // and
 void IOR(unsigned int BITS);  // inclusive or
@@ -13,7 +12,7 @@ void XOR(unsigned int BITS);  // exclusive or
 void NOR(unsigned int BITS);  // not or
 void NAND(unsigned int BITS); // not and
 void NXOR(unsigned int BITS); // not xor
-void NOT(void);       // not
+void NOT();                   // not
 
 } // namespace table
 

@@ -1,8 +1,7 @@
 
 #include "tables.hpp"
 
-int main(void)
-{
+int main() {
     // Use the "binary" namespace for binary numbers
     // Use the "tables" namespace for truth tables
 
@@ -19,8 +18,9 @@ int main(void)
     std::cout << '\n';
 
     std::vector<unsigned int> v{binary::new_number_in()};
-    for (auto i : v)
+    for (auto i : v) {
         std::cout << i;
+    }
     std::cout << '\n';
 
     return 0;
