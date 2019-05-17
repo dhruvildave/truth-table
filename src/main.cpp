@@ -1,7 +1,7 @@
 
 #include "tables.hpp"
 
-int main() {
+int main(int /*argc*/, char const * /*argv*/[]) {
     // Use the "binary" namespace for binary numbers
     // Use the "tables" namespace for truth tables
 
